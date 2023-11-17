@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Students.D_Forget">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" prefHeight="64.0" prefWidth="600.0" style="-fx-background-color: #22479f;" text="用户信息" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Bell MT" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="140.0" layoutY="284.0" prefHeight="30.0" prefWidth="69.0" text="管理员:" AnchorPane.rightAnchor="391.0" AnchorPane.topAnchor="284.0" />
+      <TextField fx:id="username" layoutX="209.0" layoutY="120.0" prefHeight="48.0" prefWidth="236.0" promptText="请输入学号" AnchorPane.bottomAnchor="238.0" AnchorPane.leftAnchor="209.0" AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="120.0" />
+      <TextField fx:id="pass" layoutX="215.0" layoutY="272.0" prefHeight="48.0" prefWidth="236.0" promptText="权限验证信息" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="149.0" AnchorPane.topAnchor="272.0" />
+      <Button fx:id="commit" layoutX="249.0" layoutY="368.0" mnemonicParsing="false" onAction="#set_commit" prefHeight="36.0" prefWidth="104.0" text="提交" AnchorPane.bottomAnchor="20.0" />
+      <Button fx:id="rtn" layoutX="465.0" layoutY="14.0" mnemonicParsing="false" onAction="#set_return" prefHeight="36.0" prefWidth="69.0" style="-fx-background-color: #22479f;" text="返回登录" textFill="WHITE" />
+      <TextField fx:id="pwd" layoutX="215.0" layoutY="197.0" prefHeight="48.0" prefWidth="236.0" promptText="请重新输入密码" AnchorPane.bottomAnchor="161.0" AnchorPane.leftAnchor="215.0" AnchorPane.rightAnchor="149.0" AnchorPane.topAnchor="197.0" />
+      <Label layoutX="134.0" layoutY="197.0" prefHeight="48.0" prefWidth="69.0" text="新密码:" />
+      <Label layoutX="134.0" layoutY="132.0" prefHeight="24.0" prefWidth="57.0" text="学号：" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="134.0" AnchorPane.rightAnchor="409.0" AnchorPane.topAnchor="132.0" />
+   </children>
+</AnchorPane>

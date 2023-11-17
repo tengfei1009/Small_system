@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="437.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Students.User">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="63.0" prefHeight="337.0" prefWidth="111.0" style="-fx-background-color: #343345;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="487.0" AnchorPane.topAnchor="63.0" />
+      <Label prefHeight="75.0" prefWidth="614.0" style="-fx-background-color: #2368c3;" AnchorPane.bottomAnchor="362.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="rtn" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="468.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#set_rtn" prefHeight="50.0" prefWidth="132.0" style="-fx-background-color: #2368c3;" text="退出登录" textFill="#08042f" AnchorPane.bottomAnchor="380.0" AnchorPane.leftAnchor="468.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="7.0">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Label layoutX="14.0" layoutY="17.0" text="教务管理系统" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="information" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#set_information" prefHeight="48.0" prefWidth="111.0" style="-fx-background-color: #343345;" text="学生信息" textFill="#908c8c" AnchorPane.bottomAnchor="252.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="489.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="course" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutY="208.0" mnemonicParsing="false" onMouseClicked="#setCourse" prefHeight="48.0" prefWidth="111.0" style="-fx-background-color: #343345;" text="课表查询" textFill="#908c8c" AnchorPane.bottomAnchor="144.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="489.0" AnchorPane.topAnchor="208.0">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="score" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutY="317.0" mnemonicParsing="false" onMouseClicked="#score" prefHeight="53.0" prefWidth="111.0" style="-fx-background-color: #343345;" text="分数查询" textFill="#908c8c" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="489.0" AnchorPane.topAnchor="317.0">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <ImageView fitHeight="374.0" fitWidth="558.0" layoutX="208.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="208.0" AnchorPane.rightAnchor="-150.0" AnchorPane.topAnchor="66.0">
+         <image>
+            <Image url="file:/C:/Users/Lenovo/Pictures/Camera Roll/风景_1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

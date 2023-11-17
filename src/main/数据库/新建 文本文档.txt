@@ -1,0 +1,80 @@
+CREATE TABLE `administrator` (
+  `id` varchar(10) NOT NULL,
+  `password` int DEFAULT NULL,
+  `pass` char(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `course` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `course` char(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `grades` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `chinese` int DEFAULT NULL,
+  `math` int DEFAULT NULL,
+  `English` int DEFAULT NULL,
+  `physics` int DEFAULT NULL COMMENT '物理',
+  `Chemistry` int DEFAULT NULL,
+  `user_id` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`),
+  UNIQUE KEY `user_id` (`user_id`),
+  CONSTRAINT `fk_grades_user_id` FOREIGN KEY (`user_id`) REFERENCES `student` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=202308 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+
+CREATE TABLE `student` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(10) DEFAULT NULL,
+  `gender` char(1) DEFAULT NULL COMMENT '性别',
+  `age` int DEFAULT NULL,
+  `profession` char(10) DEFAULT NULL,
+  `phone` int DEFAULT NULL,
+  `password` int NOT NULL DEFAULT '6666',
+  `classes` char(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2023016 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='学生表'
+
+
+CREATE TABLE `student_course` (
+  `id` int NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `student_id` int NOT NULL COMMENT '学生ID',
+  `course_id` int NOT NULL COMMENT '课程ID',
+  PRIMARY KEY (`id`),
+  KEY `fk_courseid` (`course_id`),
+  KEY `fk_studentid` (`student_id`),
+  CONSTRAINT `fk_courseid` FOREIGN KEY (`course_id`) REFERENCES `course` (`id`),
+  CONSTRAINT `fk_studentid` FOREIGN KEY (`student_id`) REFERENCES `student` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='学生课程中间表'
+
+
+CREATE TABLE `teacher` (
+  `id` varchar(10) NOT NULL COMMENT '包含字母和数字',
+  `name` varchar(10) DEFAULT NULL,
+  `gender` char(1) DEFAULT NULL COMMENT '性别',
+  `age` int DEFAULT NULL,
+  `teach` varchar(10) DEFAULT NULL COMMENT '主任科目',
+  `password` int NOT NULL DEFAULT '123',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='教师表'
+
+
+CREATE TABLE `teacher_course` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `teacher_id` char(10) DEFAULT NULL,
+  `course_id` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`),
+  KEY `teacher_course_teacher_id_fk` (`teacher_id`),
+  KEY `teacher_course_course_id_fk` (`course_id`),
+  CONSTRAINT `teacher_course_course_id_fk` FOREIGN KEY (`course_id`) REFERENCES `course` (`id`),
+  CONSTRAINT `teacher_course_teacher_id_fk` FOREIGN KEY (`teacher_id`) REFERENCES `teacher` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='教师课程中间表'

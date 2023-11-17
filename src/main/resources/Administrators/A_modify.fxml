@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Administrators.A_Modify"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <TextField fx:id="id" layoutX="165.0" layoutY="14.0" />
+        <TextField fx:id="name" layoutX="165.0" layoutY="67.0" />
+        <TextField fx:id="gender" layoutX="165.0" layoutY="121.0" />
+        <TextField fx:id="age" layoutX="165.0" layoutY="176.0" />
+        <TextField fx:id="teach" layoutX="165.0" layoutY="231.0" />
+        <TextField fx:id="password" layoutX="165.0" layoutY="285.0" />
+        <Button fx:id="commit" layoutX="245.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#set_commit" prefHeight="36.0" prefWidth="82.0" text="提交" />
+        <Button fx:id="rtn" layoutX="477.0" layoutY="337.0" mnemonicParsing="false" onMouseClicked="#set_return" prefHeight="36.0" prefWidth="76.0" text="返回" />
+        <Label layoutX="104.0" layoutY="20.0" text="工号:" />
+        <Label layoutX="104.0" layoutY="73.0" text="姓名:" />
+        <Label layoutX="99.0" layoutY="127.0" text="性别:" />
+        <Label layoutX="104.0" layoutY="188.0" text="年龄:" />
+        <Label layoutX="81.0" layoutY="237.0" text="主任科目:" />
+        <Label layoutX="86.0" layoutY="291.0" text="教务密码:" />
+    </children>
+</AnchorPane>

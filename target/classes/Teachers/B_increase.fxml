@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Teachers.B_B_Increase">
+   <children>
+      <TextField fx:id="course" layoutX="164.0" layoutY="259.0" />
+      <Button fx:id="commit" layoutX="232.0" layoutY="328.0" mnemonicParsing="false" onMouseClicked="#get_commit" prefHeight="43.0" prefWidth="107.0" text="提交" />
+      <Label prefHeight="94.0" prefWidth="600.0" style="-fx-background-color: #22479f;" />
+      <Label layoutX="31.0" layoutY="26.0" prefHeight="43.0" prefWidth="133.0" text="教师课程添加修改" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="165.0" layoutY="140.0" />
+      <Label layoutX="98.0" layoutY="146.0" text="账号:" />
+      <Label layoutX="98.0" layoutY="265.0" text="课程:" />
+      <Label layoutX="98.0" layoutY="206.0" text="姓名:" />
+      <Label fx:id="name" layoutX="164.0" layoutY="206.0" prefHeight="24.0" prefWidth="65.0" style="-fx-background-color: #234;" textFill="WHITE" />
+      <Button fx:id="rtn" layoutX="461.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#set_rtn" prefHeight="36.0" prefWidth="78.0" style="-fx-background-color: #fff;" text="返回" />
+   </children>
+</AnchorPane>

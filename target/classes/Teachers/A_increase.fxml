@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Teachers.A_A_Increase">
+   <children>
+      <TextField fx:id="id" layoutX="179.0" layoutY="34.0" prefHeight="46.0" prefWidth="250.0" />
+      <TextField fx:id="name" layoutX="179.0" layoutY="97.0" prefHeight="46.0" prefWidth="250.0" />
+      <TextField fx:id="gender" layoutX="179.0" layoutY="159.0" prefHeight="46.0" prefWidth="82.0" />
+      <TextField fx:id="profession" layoutX="175.0" layoutY="222.0" prefHeight="46.0" prefWidth="250.0" />
+      <TextField fx:id="phone" layoutX="175.0" layoutY="287.0" prefHeight="46.0" prefWidth="250.0" />
+      <Label layoutX="120.0" layoutY="45.0" text="学号:" />
+      <Label layoutX="120.0" layoutY="108.0" text="姓名:" />
+      <Label layoutX="120.0" layoutY="170.0" text="性别:" />
+      <Label layoutX="122.0" layoutY="233.0" prefHeight="24.0" prefWidth="36.0" text="专业" />
+      <Label layoutX="122.0" layoutY="298.0" text="电话" />
+      <Button fx:id="commit" layoutX="245.0" layoutY="343.0" mnemonicParsing="false" onAction="#get_commit" prefHeight="46.0" prefWidth="94.0" text="提交" />
+      <Button fx:id="rtn" layoutX="473.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#set_return" prefHeight="46.0" prefWidth="72.0" text="返回" />
+      <Label layoutX="304.0" layoutY="170.0" text="年龄:" />
+      <TextField fx:id="age" layoutX="347.0" layoutY="159.0"  prefHeight="46.0" prefWidth="82.0" />
+   </children>
+</AnchorPane>

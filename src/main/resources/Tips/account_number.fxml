@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="295.0" prefWidth="296.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Tips.AccountNumber">
+   <children>
+      <ImageView fitHeight="297.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:src/main/图片/狗.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="rtn" layoutX="88.0" layoutY="195.0" mnemonicParsing="false" onMouseClicked="#set_return" opacity="0.72" prefHeight="46.0" prefWidth="118.0" style="-fx-background-color: #248;" text="好的" textFill="WHITE" />
+      <Label layoutX="53.0" layoutY="119.0" prefHeight="30.0" prefWidth="203.0" text="账号或密码为空请重新输入" textFill="#1151bd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

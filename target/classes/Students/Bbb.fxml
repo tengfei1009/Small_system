@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--学生信息管理-->
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="437.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Students.B_Classes">
+   <children>
+      <Button fx:id="rtn" layoutX="469.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#set_return" prefHeight="46.0" prefWidth="114.0" style="-fx-background-color: #22479f;" text="返回" textFill="WHITE" AnchorPane.rightAnchor="31.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="students" layoutX="201.0" layoutY="86.0" mnemonicParsing="false" onAction="#set_students" prefHeight="87.0" prefWidth="212.0" text="查询学生" />
+      <Button fx:id="course" layoutX="201.0" layoutY="238.0" mnemonicParsing="false" onAction="#set_course" prefHeight="87.0" prefWidth="212.0" text="查询课程" />
+   </children>
+</AnchorPane>

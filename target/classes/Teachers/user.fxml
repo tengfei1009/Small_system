@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Teachers.User">
+   <children>
+      <Label layoutX="8.0" layoutY="2.0" style="-fx-background-color: #22479f;" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="231.0" layoutY="14.0" prefHeight="65.0" prefWidth="138.0" text="学生管理" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="courses" focusTraversable="false" layoutX="196.0" layoutY="277.0" mnemonicParsing="false" onMouseClicked="#set_courses" prefHeight="80.0" prefWidth="209.0" text="课程管理" />
+      <Button fx:id="information" focusTraversable="false" layoutX="196.0" layoutY="141.0" mnemonicParsing="false" onMouseClicked="#set_information" prefHeight="74.0" prefWidth="209.0" text="学生信息管理" />
+      <Button fx:id="rtn" focusTraversable="false" layoutX="450.0" layoutY="334.0" mnemonicParsing="false" onMouseClicked="#set_return" prefHeight="45.0" prefWidth="121.0" text="退出登录" />
+   </children>
+
+</AnchorPane>

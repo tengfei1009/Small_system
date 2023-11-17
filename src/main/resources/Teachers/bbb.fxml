@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Teachers.B_Course">
+   <children>
+      <Button fx:id="rtn" layoutX="515.0" layoutY="31.0" mnemonicParsing="false" onMouseClicked="#set_return" text="退出" />
+      <Button fx:id="search" layoutX="350.0" layoutY="31.0" mnemonicParsing="false" onMouseClicked="#set_search" text="查询" />
+      <Label layoutX="37.0" layoutY="37.0" text="工号" />
+      <TextField fx:id="input" layoutX="92.0" layoutY="31.0" />
+      <TableView fx:id="tableView" layoutY="80.0" prefHeight="252.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="工号" />
+          <TableColumn fx:id="name" prefWidth="75.0" text="姓名" />
+            <TableColumn fx:id="gender" prefWidth="75.0" text="性别" />
+            <TableColumn fx:id="age" prefWidth="75.0" text="年龄" />
+            <TableColumn fx:id="course" prefWidth="75.0" text="课程" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="set" layoutX="332.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#re_set" text="修改课程" />
+      <Button fx:id="increase" layoutX="24.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#set_increase" text="增加课程" />
+      <Button fx:id="delete" layoutX="186.0" layoutY="343.0" mnemonicParsing="false" onMouseClicked="#handleDeleteButtonAction" text="删除课程" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--系别管理-->
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="437.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Teachers.A_Information">
+    <children>
+        <Label layoutX="8.0" layoutY="8.0" style="-fx-background-color: #22479f;" AnchorPane.bottomAnchor="328.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <TableView fx:id="tableView" layoutY="66.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="274.0" prefWidth="606.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="66.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="学号" />
+                <TableColumn fx:id="name" prefWidth="107.0" text="姓名" />
+                <TableColumn fx:id="gender" minWidth="0.0" prefWidth="96.0" text="性别" />
+                <TableColumn fx:id="age" prefWidth="75.0" text="年龄" />
+                <TableColumn fx:id="profession" prefWidth="158.0" text="专业" />
+                <TableColumn maxWidth="219.0" minWidth="-1.0" prefWidth="172.0" text="班级" />
+                <TableColumn fx:id="phone" prefWidth="75.0" text="电话" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="rtn" layoutX="472.0" layoutY="349.6666666666667" mnemonicParsing="false" onMouseClicked="#set_return" style="-fx-background-color: #22479f;" text="返回" textFill="WHITE" AnchorPane.bottomAnchor="9.333333333333314">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="add" layoutX="23.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#set_add" prefHeight="31.0" prefWidth="60.0" text="增加" AnchorPane.bottomAnchor="14.0" />
+        <Button fx:id="change" layoutX="123.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#set_change" prefHeight="31.0" prefWidth="60.0" text="修改" AnchorPane.bottomAnchor="14.0" />
+        <Button fx:id="delete" layoutX="220.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleDeleteButtonAction" prefHeight="36.0" prefWidth="60.0" text="删除" AnchorPane.bottomAnchor="14.0" />
+        <Button fx:id="search" contentDisplay="CENTER" layoutX="443.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#set_search" prefHeight="41.0" prefWidth="97.0" text="查询" AnchorPane.bottomAnchor="379.0" AnchorPane.leftAnchor="443.0" AnchorPane.rightAnchor="74.0" AnchorPane.topAnchor="17.0" />
+        <TextField fx:id="content" layoutX="101.0" layoutY="17.0" prefHeight="41.0" prefWidth="194.0" promptText="请输入学号" AnchorPane.bottomAnchor="379.0" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="319.0" AnchorPane.topAnchor="17.0" />
+        <Label contentDisplay="CENTER" layoutX="41.0" layoutY="9.0" prefHeight="57.0" prefWidth="60.0" text="学号:" textFill="WHITE" AnchorPane.bottomAnchor="371.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="513.0" AnchorPane.topAnchor="9.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+      <Button fx:id="refresh" layoutX="322.0" layoutY="387.0" mnemonicParsing="false" onMouseClicked="#set_refresh" prefHeight="25.0" prefWidth="68.0" text="刷新" />
+    </children>
+</AnchorPane>

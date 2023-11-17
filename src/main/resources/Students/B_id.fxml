@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="437.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Students.B_B_Id">
+    <children>
+        <Button fx:id="rtn" layoutX="469.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#set_return" prefHeight="46.0" prefWidth="114.0" style="-fx-background-color: #22479f;" text="返回" textFill="WHITE" AnchorPane.rightAnchor="31.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Label layoutX="33.0" layoutY="40.0" text="学号" />
+        <Button fx:id="search" layoutX="349.0" layoutY="34.0" mnemonicParsing="false" onAction="#re_search" text="查询" />
+        <TextField fx:id="input" layoutX="85.0" layoutY="34.0" />
+        <TableView fx:id="tableView" layoutY="82.0" prefHeight="272.0" prefWidth="614.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="学号" />
+                <TableColumn fx:id="name" prefWidth="75.0" text="姓名" />
+                <TableColumn fx:id="profession" prefWidth="75.0" text="专业" />
+                <TableColumn fx:id="classes" prefWidth="75.0" text="班级" />
+                <TableColumn fx:id="course" prefWidth="75.0" text="课程" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </children>
+</AnchorPane>

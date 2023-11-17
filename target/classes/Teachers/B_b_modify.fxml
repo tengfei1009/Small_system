@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Teachers.B_B_Modify">
+   <children>
+      <Button fx:id="commit" layoutX="242.0" layoutY="255.0" mnemonicParsing="false" onMouseClicked="#set_commit" prefHeight="36.0" prefWidth="83.0" text="提交" />
+      <TextField fx:id="input" layoutX="210.0" layoutY="158.0" prefHeight="36.0" prefWidth="147.0" />
+      <Label layoutX="150.0" layoutY="164.0" text="课程:" />
+      <Button fx:id="rtn" layoutX="450.0" layoutY="267.0" mnemonicParsing="false" onMouseClicked="#set_return" text="返回" />
+   </children>
+</AnchorPane>
